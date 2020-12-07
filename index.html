@@ -37,13 +37,99 @@
 </head>
 <body>
 
-  <header class="header">
+  <header>
     <div class="container">
-      <div class="header__holder">
-        Reveris
+      <div class="navbar navbar-expand-lg">
+        <div class="header__logo">
+          <a href="#">
+            <img src="/assets/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <div class="header__content">
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">accelerator</a>
+              </li>
+              <li>
+                <a href="#">academy</a>
+              </li>
+              <li>
+                <a href="#">entertainment</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#contact" class="button button--yellow contact-us">contact us</a>
+        </div>
       </div>
     </div>
   </header>
+
+
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="container">
+        <div class="hero__headline-holder">
+          <h1 class="hero__headline headline--yellow">accelerating</h1>
+          <h1 class="hero__headline">esports</h1>
+          <h1 class="hero__headline">gaming</h1>
+          <h1 class="hero__headline">tech</h1>
+        </div>
+  
+        <img class="hero__scroll-image" src="/assets/scroll.svg" alt="scroll image">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter">
+    <div class="newsletter__content">
+      <h3 class="newsletter__title newsletter--bolder">sign up</h3>
+      <h3 class="newsletter__title">for newsletter</h3>
+
+      <a href="#" class="button button--blue button--sign-up">sign up</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__copyright">
+          Copyright 
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          by
+          <span class="footer__copyright--reveris">REVERIS</span>
+          |
+          All rights reserved.
+        </p>
+
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">accelerator</a>
+            </li>
+            <li>
+              <a href="#">academy</a>
+            </li>
+            <li>
+              <a href="#">entertainment</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>
