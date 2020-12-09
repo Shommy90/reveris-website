@@ -153,6 +153,7 @@ header {
   a {
     font-family: BebasRegular;
     font-size: 1rem;
+    letter-spacing: 1.5px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $white;
@@ -212,6 +213,7 @@ footer {
   a {
     font-family: BebasRegular;
     letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     font-size: 0.8rem;
     text-transform: uppercase;
     color: $white;
@@ -239,6 +241,7 @@ footer {
 .hero__headline {
   font-family: BebasRegular;
   font-size: 5.5rem;
+  letter-spacing: 1.5px;
   letter-spacing: 3.4px;
   text-transform: uppercase;
   font-weight: bold;
@@ -314,6 +317,7 @@ footer {
 .section-title__text {
   font-family: BebasRegular;
   color: #fff;
+  letter-spacing: 1.5px;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: 2.3px;
@@ -336,8 +340,8 @@ footer {
 
 .section-text {
   font-family: StemLight;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.9px;
   color: $white;
   font-weight: lighter;
@@ -377,7 +381,144 @@ footer {
 
 // TEAM
 .team {
-  padding: 20px 0;
+  padding: 20px 0 100px;
+}
+
+.team__container {
+  background-image: url("../assets/newsletter.png");
+  background-size: 80% 57%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 20px;
+}
+
+.team__holder {
+  display: flex;
+}
+
+.team__holder-founding-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.founding-team__text {
+  font-family: BebasRegular;
+  font-size: 2.3rem;
+  letter-spacing: 1.5px;
+  color: $blue;
+}
+
+.team__holder-persons {
+  width: 80%;
+}
+
+.team__holder-founding-team {
+  width: 20%;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.person {
+  max-width: 250px;
+  width: 100%;
+}
+
+.person__image {
+  height: 250px;
+  background-color: red;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.person__info {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person__name {
+  font-family: StemMedium;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.person__title {
+  font-family: StemLight;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.person__description {
+  font-family: StemLight;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: $yellow;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.person__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.person__socials-link {
+  i {
+    color: $white;
+    font-size: 22px;
+    background: $white;
+    color: $blue;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 9999;
+  top: 65%;
+  width: 30px;
+  height: 30px;
+  background: $yellow;
+  color: $blue;
+  border-radius: 100%;
+
+  &:hover {
+    background: $yellow;
+  }
+}
+
+.slick-prev {
+  left: auto;
+  right: -20px !important;
+}
+
+.slick-next {
+  right: -65px;
+}
+
+.slick-prev:before {
+  content: "<";
+  font-family: StemBold;
+  color: $blue;
+}
+
+.slick-next:before {
+  content: ">";
+  font-family: StemBold;
+  color: $blue;
 }
 
 // CONTACT
