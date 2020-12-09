@@ -430,7 +430,7 @@ footer {
 
 .person__image {
   height: 250px;
-  background-color: red;
+  cursor: pointer;
 
   img {
     width: 100%;
@@ -519,6 +519,12 @@ footer {
   content: ">";
   font-family: StemBold;
   color: $blue;
+}
+
+.team__person-about {
+  padding: 30px 0;
+  margin-top: 30px;
+  background: red;
 }
 
 // CONTACT

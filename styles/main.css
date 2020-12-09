@@ -999,7 +999,7 @@ footer {
 
 .person__image {
   height: 250px;
-  background-color: red;
+  cursor: pointer;
 }
 
 .person__image img {
@@ -1099,6 +1099,12 @@ footer {
   content: ">";
   font-family: StemBold;
   color: #192c41;
+}
+
+.team__person-about {
+  padding: 30px 0;
+  margin-top: 30px;
+  background: red;
 }
 
 .contact {
