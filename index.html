@@ -39,6 +39,11 @@
     
 </head>
 <body>
+  <!-- page loader -->
+  <div class="spinner-holder">
+    <div class="spinner"></div>
+  </div>
+  <!-- page loader -->
 
   <header>
     <div class="container">
@@ -307,6 +312,12 @@
       slidesToScroll: 1,
       autoplay: false,
       autoplaySpeed: 2000,
+    });
+  </script>
+
+  <script>
+    $(window).ready(function () {
+      $(".spinner-holder").fadeOut("slow");
     });
   </script>
   
