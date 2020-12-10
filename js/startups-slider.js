@@ -6,27 +6,22 @@ function getWidth() {
       document.documentElement.offsetWidth,
       document.documentElement.clientWidth
     );
-  }
+}
 
-  function slides() {
-    var slides = 3
+function slides() {
+    var slides = 4
 
-    if (getWidth() > 768) {
-      slides = 3
-    } 
-    if (getWidth() > 1600) {
-      slides = 4
-    }
     if (getWidth() < 500) {
-      slides = 1
+      slides = 2
     }
 
     return slides
   }
 
-  $('.autoplay').slick({
+
+$('.startup-slider').slick({
     slidesToShow: slides(),
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
-  });
+});

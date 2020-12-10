@@ -507,6 +507,11 @@ input[type="range"]:focus {
 }
 
 @font-face {
+  font-family: BebasBold;
+  src: url(../fonts/Bebas/BebasNeue-Bold.ttf);
+}
+
+@font-face {
   font-weight: bold;
   font-family: StemMedium;
   src: url(../fonts/Stem/Stem-Medium.otf);
@@ -904,6 +909,7 @@ footer {
   line-height: 2.2rem;
   text-transform: uppercase;
   color: #192c41;
+  text-align: center;
 }
 
 .button--sign-up {
@@ -913,10 +919,11 @@ footer {
 .page-bg {
   background-image: url(../assets/page-bg.png);
   background-position: bottom;
+  padding: 100px 0;
 }
 
 .vision {
-  padding: 40px 0;
+  padding: 0 0 20px;
 }
 
 .section-title__holder {
@@ -946,7 +953,7 @@ footer {
 }
 
 .section-text {
-  font-family: StemLight;
+  font-family: StemExtraLight;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.9px;
@@ -987,7 +994,7 @@ footer {
 }
 
 .team {
-  padding: 20px 0 100px;
+  padding: 20px 0;
 }
 
 .team__container {
@@ -1036,7 +1043,7 @@ footer {
 }
 
 .founding-team__text {
-  font-family: BebasRegular;
+  font-family: BebasBold;
   font-size: 2.3rem;
   letter-spacing: 1.5px;
   color: #192c41;
@@ -1093,14 +1100,14 @@ footer {
 }
 
 .person__title {
-  font-family: StemLight;
+  font-family: StemExtraLight;
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .person__description {
-  font-family: StemLight;
+  font-family: StemExtraLight;
   font-size: 1rem;
   line-height: 1.2rem;
   color: #eafe70;
@@ -1180,7 +1187,7 @@ footer {
 }
 
 .team__about-text {
-  font-family: StemLight;
+  font-family: StemExtraLight;
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 1px;
@@ -1482,5 +1489,129 @@ ul.contact-socials__list li:last-child {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+.accelerator__startups {
+  padding: 50px 0;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .accelerator__startups {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.accelerator__startups .section-subtitle {
+  margin-right: 50px;
+  width: 20%;
+}
+
+@media (max-width: 992px) {
+  .accelerator__startups .section-subtitle {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accelerator__startups .section-subtitle {
+    width: 100%;
+  }
+}
+
+.accelerator__startups .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accelerator__startups .slick-prev,
+.accelerator__startups .slick-next {
+  background-color: transparent;
+  top: 50%;
+}
+
+.accelerator__startups .slick-prev::before,
+.accelerator__startups .slick-next::before {
+  color: #ffffff;
+}
+
+.accelerator__startups .slick-prev {
+  left: -25px;
+}
+
+.accelerator__startups .slick-next {
+  right: -25px;
+}
+
+.startup-slider__holder {
+  width: 80%;
+}
+
+@media (max-width: 992px) {
+  .startup-slider__holder {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .startup-slider__holder {
+    width: 100%;
+  }
+}
+
+.startup-slider {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .startup-slider {
+    max-width: 600px;
+  }
+}
+
+.accelerator__startups .startup-slider {
+  margin: 0;
+}
+
+.startup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.startup__image-holder {
+  max-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.startup__image {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
