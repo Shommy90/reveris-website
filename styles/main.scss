@@ -479,7 +479,6 @@ footer {
 
 .person__image {
   height: 250px;
-  cursor: pointer;
 
   img {
     width: 100%;
@@ -497,7 +496,7 @@ footer {
 
 .person__name {
   font-family: StemMedium;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -580,6 +579,17 @@ footer {
   @media (max-width: 1200px) {
     padding: 0 10px;
   }
+}
+
+.team__about {
+  padding: 70px 0 20px;
+}
+
+.team__about-text {
+  font-family: StemLight;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 1px;
 }
 
 // CONTACT
