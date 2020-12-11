@@ -53,6 +53,10 @@ body {
   color: $white;
 }
 
+section {
+  padding: 30px 0;
+}
+
 .button {
   min-width: 140px;
   min-height: 40px;
@@ -208,7 +212,7 @@ header {
     // transition: 0.1s ease all;
 
     &:hover,
-    &.active {
+    &.active-link {
       color: $white;
       border-bottom: 3px solid $yellow;
     }
@@ -283,6 +287,10 @@ footer {
     justify-content: center;
     position: relative;
   }
+
+  @media (max-width: 1025px) {
+    height: 50vh;
+  }
 }
 
 .hero__headline {
@@ -295,6 +303,7 @@ footer {
   line-height: 5rem;
   font-weight: bold;
   color: $white;
+  user-select: none;
 }
 
 .headline--yellow {
@@ -351,13 +360,10 @@ footer {
 .page-bg {
   background-image: url(../assets/page-bg.png);
   background-position: bottom;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 // VISION
-.vision {
-  padding: 0 0 20px;
-}
 
 .section-title__holder {
   margin: 10px 0 50px;
@@ -429,9 +435,6 @@ footer {
 }
 
 // TEAM
-.team {
-  padding: 20px 0;
-}
 
 .team__container {
   background-image: url("../assets/newsletter.png");
@@ -600,7 +603,7 @@ footer {
 
 // CONTACT
 .contact {
-  padding: 70px 0 150px;
+  padding-bottom: 50px;
 
   .section-title__holder {
     margin-bottom: 100px;
@@ -865,6 +868,10 @@ ul.contact-socials__list {
       width: 100%;
     }
   }
+}
+
+.partners-slider {
+  padding: 30px 0;
 
   .slick-track {
     display: flex;
