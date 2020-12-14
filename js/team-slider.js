@@ -17,6 +17,9 @@ function getWidth() {
     if (getWidth() > 1600) {
       slides = 4
     }
+    if (getWidth() < 769) {
+      slides = 2
+    }
     if (getWidth() < 500) {
       slides = 1
     }
