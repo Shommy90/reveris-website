@@ -964,17 +964,26 @@ footer {
 
 .section-text {
   font-family: StemExtraLight;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.9px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  margin: 20px 0;
   color: #ffffff;
   font-weight: lighter;
   margin-bottom: 30px;
   padding-left: 10px;
 }
 
+.section-text strong {
+  font-family: StemMedium;
+}
+
 .section-text--italic {
   font-family: StemItalicLight;
+}
+
+.section-text--bolder {
+  font-family: StemMedium;
 }
 
 .section-subtext-holder {
@@ -1201,6 +1210,7 @@ footer {
 
 .contact {
   padding-bottom: 50px;
+  padding-top: 0;
 }
 
 .contact .section-title__holder {
@@ -1622,6 +1632,52 @@ ul.contact-socials__list li:last-child {
 }
 
 .startup__image {
+  width: 100%;
+}
+
+ul.academy-about-list {
+  margin: 40px 0;
+  padding-left: 10px;
+}
+
+ul.academy-about-list li {
+  font-family: StemExtraLight;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  margin-bottom: 40px;
+}
+
+ul.academy-about-list li:last-child {
+  margin-bottom: 0;
+}
+
+ul.academy-about-list li strong {
+  font-family: StemMedium;
+  letter-spacing: 1.2px;
+}
+
+.entertainment__about-img-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.entertainment__about-img {
+  padding: 20px;
+}
+
+.entertainment__about-img img {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

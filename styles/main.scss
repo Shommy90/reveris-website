@@ -395,17 +395,26 @@ footer {
 
 .section-text {
   font-family: StemExtraLight;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.9px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  margin: 20px 0;
   color: $white;
   font-weight: lighter;
   margin-bottom: 30px;
   padding-left: 10px;
+
+  strong {
+    font-family: StemMedium;
+  }
 }
 
 .section-text--italic {
   font-family: StemItalicLight;
+}
+
+.section-text--bolder {
+  font-family: StemMedium;
 }
 
 .section-subtext-holder {
@@ -604,6 +613,7 @@ footer {
 // CONTACT
 .contact {
   padding-bottom: 50px;
+  padding-top: 0;
 
   .section-title__holder {
     margin-bottom: 100px;
@@ -937,4 +947,45 @@ ul.contact-socials__list {
 
 .startup__image {
   width: 100%;
+}
+
+// ACADEMY
+ul.academy-about-list {
+  margin: 40px 0;
+  padding-left: 10px;
+
+  li {
+    font-family: StemExtraLight;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-family: StemMedium;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+.entertainment__about-img-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.entertainment__about-img {
+  padding: 20px;
+
+  img {
+    width: 100%;
+  }
 }
