@@ -945,7 +945,21 @@ ul.academy-about-list {
   }
 }
 
+@media (max-width: 576px) {
+  .entertainment__about-img-holder {
+    flex-wrap: wrap;
+  }
+
+  .contact-form-holder {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 414px) {
+  body {
+    font-size: 14px;
+  }
+
   .footer__content {
     justify-content: center;
   }
@@ -1012,5 +1026,18 @@ ul.academy-about-list {
   .contact-socials__text {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  .newsletter {
+    padding: 30px 0;
+  }
+
+  .newsletter__title,
+  .newsletter__title--bold {
+    font-size: 1.6rem;
+  }
+
+  .contact-form__title {
+    font-size: 1.6rem;
   }
 }
