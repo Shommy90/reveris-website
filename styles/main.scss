@@ -166,8 +166,9 @@ header {
   padding: 15px 0;
 }
 
-.navbar {
-  padding: 0;
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -909,7 +910,84 @@ ul.academy-about-list {
   }
 }
 
+.header__content--mobile {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.header__nav--mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__nav--mobile {
+  ul {
+    padding-top: 10px;
+    display: none;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-family: BebasRegular;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $white;
+    padding: 3px 0;
+
+    &.active-link--mobile {
+      color: $yellow;
+    }
+  }
+}
+
+.header__logo--mobile {
+  img {
+    height: 44px;
+  }
+}
+
+.burger-btn {
+  width: 25px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+.burger-btn--line {
+  display: block;
+  height: 3px;
+  background-color: $yellow;
+  border-radius: 10px;
+}
+
+// RESPONSIVE
+
 @media (max-width: 768px) {
+  .header__content--mobile {
+    display: block;
+  }
+
+  .header__content {
+    display: none;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
   .contact__form-map-holder {
     flex-direction: column;
   }
