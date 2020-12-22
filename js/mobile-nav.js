@@ -1,5 +1,5 @@
 $('#toggle').click(function() {
-    $('ul').slideToggle(200, function() {
+    $('ul.mobile-nav').slideToggle(200, function() {
         // Animation complete.
     });
 });
