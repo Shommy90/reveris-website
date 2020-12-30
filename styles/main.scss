@@ -954,27 +954,93 @@ ul.academy-about-list {
   }
 }
 
+// burger menu button
 .burger-btn {
-  width: 25px;
-  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
   position: absolute;
   right: 0;
   top: 15px;
 }
 
-.burger-btn--line {
-  display: block;
-  height: 3px;
-  background-color: $yellow;
-  border-radius: 10px;
+.burger-btn {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
+
+.burger-btn span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: $yellow;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.burger-btn span:nth-child(1) {
+  top: 0px;
+}
+
+.burger-btn span:nth-child(2),
+.burger-btn span:nth-child(3) {
+  top: 9px;
+}
+
+.burger-btn span:nth-child(4) {
+  top: 18px;
+}
+
+.burger-btn.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.burger-btn.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.burger-btn.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.burger-btn.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+// burger menu button
 
 // RESPONSIVE
 
+// MEDIA 768px
 @media (max-width: 768px) {
   .header__content--mobile {
     display: block;
@@ -1023,6 +1089,7 @@ ul.academy-about-list {
   }
 }
 
+// MEDIA 576px
 @media (max-width: 576px) {
   .entertainment__about-img-holder {
     flex-wrap: wrap;
@@ -1031,8 +1098,13 @@ ul.academy-about-list {
   .contact-form-holder {
     padding: 20px;
   }
+
+  .newsletter {
+    padding: 30px 0;
+  }
 }
 
+// MEDIA 414px
 @media (max-width: 414px) {
   body {
     font-size: 14px;
@@ -1104,10 +1176,6 @@ ul.academy-about-list {
   .contact-socials__text {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-
-  .newsletter {
-    padding: 30px 0;
   }
 
   .newsletter__title,
