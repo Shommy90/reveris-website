@@ -1019,7 +1019,7 @@ footer {
 
 .team__container {
   background-image: url("../assets/newsletter.png");
-  background-size: 80% 57%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
   padding-top: 20px;
@@ -1055,10 +1055,9 @@ footer {
   padding-top: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .team__holder-founding-team {
-    width: 100%;
-    padding: 10px 0 30px;
+    padding-top: 0;
   }
 }
 
@@ -1071,6 +1070,14 @@ footer {
 
 .team__holder-persons {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slick-initialized .slick-slide {
@@ -1083,8 +1090,9 @@ footer {
 }
 
 .person {
-  max-width: 250px;
+  max-width: 220px;
   width: 100%;
+  margin: 15px;
 }
 
 .person__image {
@@ -1512,11 +1520,19 @@ ul.contact-socials__list li:last-child {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1200px) {
   .startup-slider {
     max-width: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1534,6 +1550,7 @@ ul.contact-socials__list li:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 .startup__image-holder {
@@ -1764,6 +1781,15 @@ ul.academy-about-list li strong {
   }
   .contact .section-title__holder {
     margin-bottom: 50px;
+  }
+  .team__holder-persons {
+    width: 100%;
+  }
+  .team__container {
+    background-image: none;
+  }
+  .team__holder-founding-team {
+    display: none;
   }
 }
 

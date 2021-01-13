@@ -448,7 +448,7 @@ footer {
 
 .team__container {
   background-image: url("../assets/newsletter.png");
-  background-size: 80% 57%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
   padding-top: 20px;
@@ -469,9 +469,8 @@ footer {
   align-items: center;
   padding-top: 80px;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 10px 0 30px;
+  @media (max-width: 1300px) {
+    padding-top: 0;
   }
 }
 
@@ -484,6 +483,9 @@ footer {
 
 .team__holder-persons {
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .slick-initialized .slick-slide {
@@ -492,8 +494,9 @@ footer {
 }
 
 .person {
-  max-width: 250px;
+  max-width: 220px;
   width: 100%;
+  margin: 15px;
 }
 
 .person__image {
@@ -842,9 +845,12 @@ ul.contact-socials__list {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
   @media (max-width: 1200px) {
     max-width: 600px;
+    flex-wrap: wrap;
   }
 }
 
@@ -856,6 +862,7 @@ ul.contact-socials__list {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .startup__image-holder {
@@ -1086,6 +1093,18 @@ ul.academy-about-list {
 
   .contact .section-title__holder {
     margin-bottom: 50px;
+  }
+
+  .team__holder-persons {
+    width: 100%;
+  }
+
+  .team__container {
+    background-image: none;
+  }
+
+  .team__holder-founding-team {
+    display: none;
   }
 }
 

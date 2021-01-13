@@ -19,9 +19,9 @@ function slides() {
   }
 
 
-$('.startup-slider').slick({
-    slidesToShow: slides(),
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
+// $('.startup-slider').slick({
+//     slidesToShow: slides(),
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+// });
