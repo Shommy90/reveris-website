@@ -447,11 +447,11 @@ footer {
 // TEAM
 
 .team__container {
-  background-image: url("../assets/newsletter.png");
+  // background-image: url("../assets/newsletter.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
-  padding-top: 20px;
+  // padding-top: 20px;
 }
 
 .team__holder {
@@ -482,10 +482,11 @@ footer {
 }
 
 .team__holder-persons {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .slick-initialized .slick-slide {
@@ -496,7 +497,7 @@ footer {
 .person {
   max-width: 220px;
   width: 100%;
-  margin: 15px;
+  margin: 20px;
 }
 
 .person__image {
@@ -612,6 +613,7 @@ footer {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 // CONTACT
